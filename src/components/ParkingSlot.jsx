@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Clock, Info } from 'lucide-react';
+import {Link} from "react-router-dom"
 
 export default function ParkingSlotGrid() {
   // Sample data structure for slots
@@ -59,6 +60,34 @@ export default function ParkingSlotGrid() {
           <h1 className="text-2xl font-bold text-gray-800">Parking Slot Booking</h1>
           <p className="text-gray-600">Select an available slot to book</p>
         </div>
+        <div className="mb-6">
+        <div className="flex items-center justify-between mb-8">
+    <Link 
+        to="/dashboard" 
+        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+    >
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            className="w-4 h-4" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor"
+        >
+            <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M10 19l-7-7m0 0l7-7m-7 7h18" 
+            />
+        </svg>
+        Back to Dashboard
+    </Link>
+    <div>
+        <h1 className="text-2xl font-bold text-gray-800">Parking Slot Booking</h1>
+        <p className="text-gray-600">Select an available slot to book</p>
+    </div>
+</div>
+</div>
 
         {/* Legend */}
         <div className="flex items-center gap-6 mb-6">
