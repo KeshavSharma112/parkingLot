@@ -65,13 +65,6 @@ const AuthForm = () => {
           setError(data.message || 'Signup failed. Please try again.');
         }
       } else {
-        // Signin logic
-        const userId = localStorage.getItem('userId');
-        if (!userId) {
-          setError("User ID not found. Please sign up first.");
-          setLoading(false);
-          return;
-        }
 
         response = await fetch(`${signinUrl}`, {
           method: 'POST',
