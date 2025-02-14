@@ -12,7 +12,7 @@ const AuthForm = () => {
   const [loading, setLoading] = useState(false);
 
   const signupUrl = "https://cc1fbde45ead-in-south-01.backstract.io/affectionate-keller-d1d63ba4eaaa11efab560242ac12000527/api/users/";
-  const signinUrl = "https://cc1fbde45ead-in-south-01.backstract.io/affectionate-keller-d1d63ba4eaaa11efab560242ac12000527/api/users/id?id=";
+  const signinUrl = "https://cc1fbde45ead-in-south-01.backstract.io/affectionate-keller-d1d63ba4eaaa11efab560242ac12000527/api/users/signin";
 
   const toggleForm = () => {
     setIsRegister(!isRegister);
@@ -73,7 +73,7 @@ const AuthForm = () => {
           return;
         }
 
-        response = await fetch(`${signinUrl}${userId}`, {
+        response = await fetch(`${signinUrl}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
