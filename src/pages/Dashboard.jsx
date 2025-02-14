@@ -34,7 +34,7 @@ export default function Dashboard() {
   const handleLogout = () => {
     localStorage.removeItem('token'); // Clear the token
     localStorage.removeItem('userId'); // Clear the user ID
-    navigate('/auth'); // Redirect to login page
+    navigate('/'); // Redirect to login page
   };
 
   const handleAddVehicle = () => {
@@ -122,9 +122,9 @@ export default function Dashboard() {
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-all"
                 >
                   <option value="">Select Vehicle Type</option>
-                  <option value="Car">Car</option>
-                  <option value="Motorcycle">Motorcycle</option>
-                  <option value="Truck">Truck</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="Electric">Electric</option>
                 </select>
               </div>
               <div>

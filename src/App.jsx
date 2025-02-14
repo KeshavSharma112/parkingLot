@@ -38,7 +38,7 @@ const LandingPage = () => {
       {/* Features Section */}
       <section className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-16 text-gray-800">Why Choose Park Smart?</h2>
+          <h2 className="text-3xl font-bold text-center mb-16 text-gray-800">Why Choose Park Mate?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard 
               icon={<Clock className="w-8 h-8 text-blue-600" />}
@@ -95,7 +95,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">Park Smart</h3>
+              <h3 className="text-lg font-semibold mb-4">Park Mate</h3>
               <p className="text-gray-400">Making parking easier, one spot at a time.</p>
             </div>
             <div>
